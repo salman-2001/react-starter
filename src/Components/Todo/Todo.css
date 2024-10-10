@@ -1,0 +1,33 @@
+li {
+    list-style: none;
+  }
+  
+  .Container-2 {
+    margin-top: 80px;
+    background-color: white;
+    border: solid grey 1px;
+   
+  
+  }
+  h1 {
+    border-bottom: solid grey 1px;
+    padding: 18px;
+   
+  }
+  .Container-2 li {
+    border-bottom: solid grey 1px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Container-2 ul :last-child {
+    border: none;
+  }
+  .Container-2 ul {
+    padding-right: 25px;
+  }
+  .modal {
+    display: flex;
+    align-items: center;
+    grid-gap: 35px;
+  }

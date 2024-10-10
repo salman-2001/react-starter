@@ -1,0 +1,20 @@
+
+.Container-1 {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 25px;
+    }
+input {
+    flex: 1.7;
+    background-color: white;
+    border: solid grey 1px;
+  }
+  .button {
+    flex: 1;
+    padding: 12px;
+  background-color: rgb(21, 97, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
+  }
