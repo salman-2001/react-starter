@@ -1,8 +1,14 @@
 import React, { memo } from "react";
 import "./DeleteModal.css"
+import { useGlobalContext } from "../../GlobalProvider";
+import Lottie from "lottie-react";
+import animationData from '../../assets/lotti/loading.json'
 
 const DeleteModal = (prop) => {
-  const { isOpen, onClose, deleteData  } = prop;
+  const { isOpen, onClose,deleteData,isPlaying } = prop;
+
+
+
   if (!isOpen) return null
   return (
     <div>
@@ -14,7 +20,14 @@ const DeleteModal = (prop) => {
 <div className="yesNo">
     
         <button className="modal-close" onClick={()=>deleteData()}>
-                Yes
+        {isPlaying ? (
+            <Lottie 
+              animationData={animationData} 
+              loop={true} 
+              autoplay={true} 
+              style={{ height: 40, width: 40, marginRight: 10 }} 
+            />
+          ) : "Yes" }
               </button>
 
 

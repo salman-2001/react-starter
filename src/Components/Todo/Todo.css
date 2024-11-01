@@ -9,8 +9,8 @@ li {
    
   
   }
-  h1 {
-    border-bottom: solid grey 1px;
+  .Container-2 h1 {
+    border-bottom: solid grey 2px;
     padding: 18px;
    
   }
